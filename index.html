@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="An interactive 3D model of a 2013 Honda Civic LX for car beginners: open the hood, look inside the engine, check the brakes, and find what a symptom means."
+    />
+    <title>2013 Honda Civic LX — 3D learning model</title>
+    <!-- link-preview card (LinkedIn, Slack, iMessage, X…); public/og-image.png is copied next to index.html -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Honda Civic 3D Model" />
+    <meta
+      property="og:description"
+      content="Explore a 2013 Honda Civic LX in 3D: open the hood, watch the engine run, and learn what every part does."
+    />
+    <meta property="og:url" content="https://wilwilmina.github.io/Honda-Civic3D-Model/" />
+    <meta property="og:image" content="https://wilwilmina.github.io/Honda-Civic3D-Model/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <!-- #stage holds the 3D canvas, #ui the side panel and overlays (both filled in by src/main.js) -->
+    <div id="stage"></div>
+    <div id="ui"></div>
+    <div class="ui-loading">Loading your Civic…</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

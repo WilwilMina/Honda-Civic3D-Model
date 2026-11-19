@@ -1,0 +1,14 @@
+# dependencies and build output
+node_modules/
+dist/
+
+# QA screenshots (tools/qa/final-qa.mjs) and Blender backup files
+shots/
+*.blend1
+
+# editor and OS clutter
+__pycache__/
+.DS_Store
+.vscode/
+.idea/
+*.log

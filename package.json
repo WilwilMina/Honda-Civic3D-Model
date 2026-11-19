@@ -1,0 +1,46 @@
+{
+  "name": "honda-civic3d-model",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive, offline 3D model of a 2013 Honda Civic LX for car beginners: open the hood, watch the engine run, check the brakes, and look up what a symptom means.",
+  "keywords": [
+    "three.js",
+    "3d",
+    "car",
+    "honda-civic",
+    "education",
+    "car-maintenance",
+    "webgl",
+    "vite"
+  ],
+  "homepage": "https://wilwilmina.github.io/Honda-Civic3D-Model/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilwilMina/Honda-Civic3D-Model.git"
+  },
+  "author": "Mina Abdel-Masih (https://github.com/WilwilMina)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "export:glb": "node tools/export-glb.mjs dist/index.html dist/civic-2013-lx.glb",
+    "export:blend": "node tools/make-blend.mjs dist/civic-2013-lx.glb dist/civic-2013-lx.blend",
+    "qa": "node tools/qa/final-qa.mjs dist/index.html",
+    "qa:reveal": "node tools/qa/reveal-check.mjs dist/index.html",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.10.1",
+    "puppeteer-core": "^25.18.1",
+    "vite": "^6.4.6",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
